@@ -8,11 +8,11 @@
 <body>
     <h1 id="title">Favorite games</h1>
     <p id="description">Thank you for taking your time to answer questions about your favorite games</p>
-    <form id="form">
+    <form id="survey-form">
         <fieldset>
             <label for="name" id="name-label">Please enter your name: <input id="name" name="name" type="text" required placeholder="Type in your name"/></label>
             <label for="email" id="email-label">Please enter your email address: <input id="email" name="email" type="email" required placeholder="Type in your email"/></label>
-            <label for="age" id="number-label">Please enter your age: <input id="age" name="age" type="number" min="13" max="120" placeholder="Type in your age"/></label>
+            <label for="age" id="number-label">Please enter your age: <input id="number" name="age" type="number" min="13" max="120" placeholder="Type in your age"/></label>
                 <select id="dropdown">
                 <option value="">(select your favorite game genre)</option>
                 <option value="1">FPS</option>
@@ -30,13 +30,15 @@
             <label for="preferred-platform"><input type="checkbox" name="preferred-platform" class="inline" value="3"/> I prefer playing on Consoles</label>
         </fieldset>
         <fieldset>
-            <label for="gaming-style"><input id="solo-games" type="radio" name="gaming-style" class="inline" /> I prefer solo games</label>
-            <label for="gaming-style"><input id="coop-games" type="radio" name="gaming-style" class="inline" /> I prefer coop gamess</label>
-            <label for="gaming-style"><input id="multiplayer-games" type="radio" name="gaming-style" class="inline" /> I prefer massively played multiplayer games</label>
+            <label for="gaming-style"><input id="solo-games" type="radio" name="gaming-style" class="inline" value="1"/> I prefer solo games</label>
+            <label for="gaming-style"><input id="coop-games" type="radio" name="gaming-style" class="inline" value="2"/> I prefer coop gamess</label>
+            <label for="gaming-style"><input id="multiplayer-games" type="radio" name="gaming-style" class="inline" value="3"/> I prefer massively played multiplayer games</label>
             <label>
                 <textarea id="additional-comments" rows="3" cols="30" placeholder="Any additional information about your gaming preferences..."></textarea>
             </label>
         </fieldset>
+        
+        <button type="submit" id="submit">Submit</button>
     </form>
 </body>
 </html>
