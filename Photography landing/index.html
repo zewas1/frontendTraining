@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Landing page</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <img id="header-img" src="https://cdn.iconscout.com/icon/free/png-128/photo-camera-1781076-1517915.png">
+      </div>
+      <h1 class="main-title">Photography</h1>
+      <nav id="nav-bar">
+        <a class="nav-link" href="#gallery">Gallery</a>
+        <a class="nav-link" href="#about-us">About us</a>
+        <a class="nav-link" href="#contacts">Contacts</a>
+      </nav>
+    </header>
+    <main>
+      <section id="gallery">
+        <h2 class="title">Gallery</h2>
+        <img src="https://images.pexels.com/photos/11719056/pexels-photo-11719056.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" loading="lazy" alt="roses" class="gallery-image">
+        <img src="https://images.pexels.com/photos/14690503/pexels-photo-14690503.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" loading="lazy" alt="cafe" class="gallery-image">
+        <img src="https://images.pexels.com/photos/1929659/pexels-photo-1929659.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" loading="lazy" alt="woman in the kitchen" class="gallery-image">
+        <img src="https://images.pexels.com/photos/7325999/pexels-photo-7325999.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" loading="lazy" alt="book store" class="gallery-image">
+      </section>
+      <section id="about-us">
+        <h2 class="title">About us</h2>
+        <p class="about-us">Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”
+
+As Cicero would put it, “Um, not so fast.”
+
+The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin.</p>
+        <iframe
+            id="video"
+            src="https://www.youtube-nocookie.com/embed/DDEFmo_0cqY?rel=0&amp;controls=0&amp;showinfo=0"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+        <div class="form-email">
+          <label for="email">Sign up to our newsletter:  <input name="email" type="email" id="email" placeholder="Enter your email address" />
+          </label>
+        </div>
+        <input id="submit" type="submit" value="Get Started!" />
+    </form>
+      </section>
+      <section id="contacts">
+        <h2 class="title">Contact information</h2>
+        <p class="address">123 East-London, 2nd building</p>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Made by <a href="https://github.com/zewas1" target="_blank">Z1</a>
+      </p>
+    </footer>
+  </body>
+</html>
